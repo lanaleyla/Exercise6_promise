@@ -2,12 +2,12 @@
 //check if a given number is greater then 10
 function isGreater(number) {
     return new Promise(function (resolve, reject) {
-            setTimeout(() => {
-                if (number > 10) resolve("True");
-                else reject(new Error(number));
+        setTimeout(() => {
+            if (number > 10) resolve("True");
+            else reject(new Error(number));
 
-            }, 500);
-        });
+        }, 500);
+    });
 }
 
 isGreater(12)
